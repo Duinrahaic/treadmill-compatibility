@@ -5,11 +5,12 @@
   "description": "Treadmill compatibility database",
   "scripts": {
     "compile": "node scripts/compile.js",
-    "validate": "ajv validate -s schema/treadmill.schema.json -d \"data/treadmills/*.json\"",
-    "validate:compiled": "ajv validate -s schema/treadmills.schema.json -d data/treadmills.json"
+    "validate": "ajv validate -s schema/treadmill.schema.json -r schema/features.schema.json -d \"data/treadmills/*.json\" --spec=draft7 -c ajv-formats",
+    "validate:compiled": "ajv validate -s schema/treadmills.schema.json -r schema/treadmill.schema.json -r schema/features.schema.json -d data/treadmills.json --spec=draft7 -c ajv-formats"
   },
   "devDependencies": {
     "ajv": "^8.12.0",
-    "ajv-cli": "^5.0.0"
+    "ajv-cli": "^5.0.0",
+    "ajv-formats": "^3.0.1"
   }
 }

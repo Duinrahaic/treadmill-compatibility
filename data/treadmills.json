@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2025-12-22T00:23:17.579Z",
+    "generatedAt": "2025-12-22T00:29:49.538Z",
     "schemaVersion": "1.0.0"
   },
   "treadmills": [
@@ -16,10 +16,15 @@
       "features": {
         "bluetooth": true,
         "ftms": false,
+        "speed_read": true,
         "speed_control": true,
+        "incline_read": false,
         "incline_control": false,
-        "heart_rate": false,
+        "distance": true,
+        "steps": false,
         "cadence": false,
+        "calories": false,
+        "heart_rate": false,
         "remote_start": false
       },
       "applications": {

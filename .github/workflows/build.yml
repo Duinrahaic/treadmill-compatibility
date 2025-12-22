@@ -19,14 +19,17 @@ jobs:
         with:
           node-version: 20
 
-      - name: Install AJV
-        run: npm install ajv ajv-cli
+      - name: Install dependencies
+        run: npm install ajv ajv-cli ajv-formats
 
       - name: Validate individual treadmill files
         run: |
           npx ajv validate \
             -s schema/treadmill.schema.json \
-            -d "data/treadmills/*.json"
+            -r schema/features.schema.json \
+            -d "data/treadmills/*.json" \
+            --spec=draft7 \
+            -c ajv-formats
 
       - name: Compile dataset
         run: node scripts/compile.js
@@ -35,7 +38,11 @@ jobs:
         run: |
           npx ajv validate \
             -s schema/treadmills.schema.json \
-            -d data/treadmills.json
+            -r schema/treadmill.schema.json \
+            -r schema/features.schema.json \
+            -d data/treadmills.json \
+            --spec=draft7 \
+            -c ajv-formats
 
       - name: Commit compiled file
         if: github.ref == 'refs/heads/master'
