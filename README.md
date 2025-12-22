@@ -2,8 +2,8 @@
 
 Authoritative treadmill compatibility data for:
 
-- **FitOSC** - Fitness OSC protocol support
-- **VRTI** - Virtual running/training interface compatibility
+- **FitOSC**
+- **VRTI**
 
 ## Quick Start
 
