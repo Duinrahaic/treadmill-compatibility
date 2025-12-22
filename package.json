@@ -6,7 +6,8 @@
   "scripts": {
     "compile": "node scripts/compile.js",
     "validate": "ajv validate -s schema/treadmill.schema.json -r schema/features.schema.json -d \"data/treadmills/*.json\" --spec=draft7 -c ajv-formats",
-    "validate:compiled": "ajv validate -s schema/treadmills.schema.json -r schema/treadmill.schema.json -r schema/features.schema.json -d data/treadmills.json --spec=draft7 -c ajv-formats"
+    "validate:compiled": "ajv validate -s schema/treadmills.schema.json -r schema/treadmill.schema.json -r schema/features.schema.json -d data/treadmills.json --spec=draft7 -c ajv-formats",
+    "prepare": "bash scripts/install-hooks.sh"
   },
   "devDependencies": {
     "ajv": "^8.12.0",
