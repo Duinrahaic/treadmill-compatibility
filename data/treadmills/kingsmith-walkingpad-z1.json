@@ -1,0 +1,41 @@
+﻿{
+  "id": "kingsmith-walkingpad-z1",
+  "make": "KingSmith",
+  "model": "WalkingPad Z1",
+  "driver": "Generic Bluetooth (FTMS)",
+
+  "source": {
+    "name": "KingSmith Official Store",
+    "url": "https://www.kingsmith.com/products/walkingpad-z1"
+  },
+
+  "features": {
+    "bluetooth": true,
+    "ftms": true,
+
+    "speed_read": true,
+    "speed_control": true,
+
+    "incline_read": false,
+    "incline_control": false,
+
+    "distance": true,
+    "steps": false,
+    "cadence": false,
+
+    "calories": false,
+    "heart_rate": false,
+
+    "remote_start": false
+  },
+
+  "applications": {
+    "fitosc": { "supported": false, "notes": [] },
+    "vrti": {
+      "supported": true,
+      "notes": []
+    }
+  },
+
+  "sharedNotes": []
+}

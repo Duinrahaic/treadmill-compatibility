@@ -1,0 +1,21 @@
+﻿{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["meta", "treadmills"],
+  "properties": {
+    "meta": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["generatedAt", "schemaVersion"],
+      "properties": {
+        "generatedAt": { "type": "string", "format": "date-time" },
+        "schemaVersion": { "type": "string" }
+      }
+    },
+    "treadmills": {
+      "type": "array",
+      "items": { "$ref": "treadmill.schema.json" }
+    }
+  }
+}

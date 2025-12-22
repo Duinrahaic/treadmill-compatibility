@@ -1,0 +1,53 @@
+﻿{
+  "id": "urevo-strol-2e",
+  "make": "UREVO",
+  "model": "Strol 2E (URTM030)",
+  "driver": "Generic Bluetooth (FTMS)",
+
+  "weight": {
+    "maxUser": 265,
+    "unit": "lb"
+  },
+
+  "speedRange": {
+    "min": 0.5,
+    "max": 6,
+    "unit": "kmh"
+  },
+
+  "source": {
+    "name": "UREVO Official Store",
+    "url": "https://urevo.com/products/strol-2e"
+  },
+
+  "features": {
+    "bluetooth": true,
+    "ftms": true,
+
+    "speed_read": true,
+    "speed_control": true,
+
+    "incline_read": false,
+    "incline_control": false,
+
+    "distance": true,
+    "steps": false,
+    "cadence": false,
+
+    "calories": false,
+    "heart_rate": false,
+
+    "remote_start": false
+  },
+
+  "applications": {
+    "fitosc": { "supported": false, "notes": [] },
+    "vrti": {
+      "supported": true,
+      "notes": [
+      ]
+    }
+  },
+
+  "sharedNotes": []
+}

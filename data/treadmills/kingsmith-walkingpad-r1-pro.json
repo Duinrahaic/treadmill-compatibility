@@ -1,0 +1,49 @@
+﻿{
+  "id": "kingsmith-walkingpad-r1-pro",
+  "make": "KingSmith",
+  "model": "WalkingPad R1 PRO",
+  "driver": "KingSmith WalkingPad Driver",
+
+  "speedRange": {
+    "min": 0.5,
+    "max": 10,
+    "unit": "kmh"
+  },
+
+  "source": {
+    "name": "KingSmith Official Store",
+    "url": "https://www.kingsmith.com/products/walkingpad-r1-pro"
+  },
+
+  "features": {
+    "bluetooth": true,
+    "ftms": false,
+
+    "speed_read": true,
+    "speed_control": true,
+
+    "incline_read": false,
+    "incline_control": false,
+
+    "distance": true,
+    "steps": false,
+    "cadence": false,
+
+    "calories": false,
+    "heart_rate": false,
+
+    "remote_start": false
+  },
+
+  "applications": {
+    "fitosc": { "supported": false, "notes": [] },
+    "vrti": {
+      "supported": true,
+      "notes": [
+        "Limited to ~6 km/h unless the bar is extended"
+      ]
+    }
+  },
+
+  "sharedNotes": []
+}

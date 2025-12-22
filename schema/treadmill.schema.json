@@ -1,0 +1,93 @@
+﻿{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "make",
+    "model",
+    "driver",
+    "source",
+    "features",
+    "applications",
+    "sharedNotes"
+  ],
+  "properties": {
+    "id": { "type": "string" },
+    "make": { "type": "string" },
+    "model": { "type": "string" },
+    "driver": { "type": "string" },
+
+    "weight": {
+      "type": "object",
+      "required": ["maxUser", "unit"],
+      "additionalProperties": false,
+      "properties": {
+        "maxUser": { "type": "number", "exclusiveMinimum": 0 },
+        "unit": { "type": "string", "enum": ["kg", "lb"] }
+      }
+    },
+
+    "speedRange": {
+      "type": "object",
+      "required": ["min", "max", "unit"],
+      "additionalProperties": false,
+      "properties": {
+        "min": { "type": "number", "minimum": 0 },
+        "max": { "type": "number", "exclusiveMinimum": 0 },
+        "unit": { "type": "string", "enum": ["kmh", "mph"] }
+      }
+    },
+
+    "source": {
+      "type": "object",
+      "required": ["name", "url"],
+      "additionalProperties": false,
+      "properties": {
+        "name": { "type": "string" },
+        "url": { "type": "string", "format": "uri" }
+      }
+    },
+
+    "features": {
+      "$ref": "features.schema.json"
+    },
+
+    "applications": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["fitosc", "vrti"],
+      "properties": {
+        "fitosc": {
+          "type": "object",
+          "required": ["supported", "notes"],
+          "additionalProperties": false,
+          "properties": {
+            "supported": { "type": "boolean" },
+            "notes": {
+              "type": "array",
+              "items": { "type": "string" }
+            }
+          }
+        },
+        "vrti": {
+          "type": "object",
+          "required": ["supported", "notes"],
+          "additionalProperties": false,
+          "properties": {
+            "supported": { "type": "boolean" },
+            "notes": {
+              "type": "array",
+              "items": { "type": "string" }
+            }
+          }
+        }
+      }
+    },
+
+    "sharedNotes": {
+      "type": "array",
+      "items": { "type": "string" }
+    }
+  }
+}

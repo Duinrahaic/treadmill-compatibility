@@ -1,0 +1,47 @@
+﻿name: Build & Validate Treadmill Data
+
+on:
+  push:
+    paths:
+      - "data/treadmills/**.json"
+      - "schema/**"
+      - "scripts/**"
+  pull_request:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install AJV
+        run: npm install ajv ajv-cli
+
+      - name: Validate individual treadmill files
+        run: |
+          npx ajv validate \
+            -s schema/treadmill.schema.json \
+            -d "data/treadmills/*.json"
+
+      - name: Compile dataset
+        run: node scripts/compile.js
+
+      - name: Validate compiled dataset
+        run: |
+          npx ajv validate \
+            -s schema/treadmills.schema.json \
+            -d data/treadmills.json
+
+      - name: Commit compiled file
+        if: github.ref == 'refs/heads/main'
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+          git add data/treadmills.json
+          git commit -m "chore: compile treadmill dataset" || echo "No changes"
+          git push
