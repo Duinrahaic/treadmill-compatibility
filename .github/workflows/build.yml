@@ -46,12 +46,6 @@ jobs:
             --spec=draft7 \
             -c ajv-formats
 
-      - name: Commit compiled file
-        if: github.ref == 'refs/heads/master'
+      - name: Check if compiled file is up to date
         run: |
-          git config user.name "github-actions"
-          git config user.email "github-actions@github.com"
-          git add data/treadmills.json
-          git diff --staged --quiet || git commit -m "chore: compile treadmill dataset"
-          git pull --rebase origin master
-          git push
+          git diff --exit-code data/treadmills.json || (echo "⚠️ data/treadmills.json is out of date. Run 'npm run compile' locally and commit." && exit 1)
