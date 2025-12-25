@@ -1,0 +1,17 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:github.com)",
+      "WebSearch",
+      "WebFetch(domain:developer.huawei.com)",
+      "WebFetch(domain:gist.github.com)",
+      "WebFetch(domain:fdflimited.com)",
+      "Bash(node scripts/migrate-to-ftms.js:*)",
+      "Bash(node scripts/features-to-array.js:*)",
+      "Bash(npm run validate:*)",
+      "Bash(npm run compile:*)",
+      "Bash(npm run validate:compiled:*)",
+      "WebFetch(domain:www.urevo.com)"
+    ]
+  }
+}

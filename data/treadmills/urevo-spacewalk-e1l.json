@@ -1,15 +1,15 @@
 {
-  "id": "urevo-strol-2e",
+  "id": "urevo-spacewalk-e1l",
   "make": "UREVO",
-  "model": "Strol 2E (URTM030)",
+  "model": "SpaceWalk E1L",
   "driver": "Generic",
   "weight": {
-    "maxUser": 265,
+    "maxUser": 242,
     "unit": "lb"
   },
   "source": {
     "name": "UREVO Official Store",
-    "url": "https://www.urevo.com/products/strol-2e-treadmill"
+    "url": "https://www.urevo.com/products/urevo-spacewalk-e1l-treadmill"
   },
   "features": [
     "speedControl"

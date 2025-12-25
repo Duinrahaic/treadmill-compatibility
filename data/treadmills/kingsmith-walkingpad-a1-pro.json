@@ -1,41 +1,27 @@
-﻿{
+{
   "id": "kingsmith-walkingpad-a1-pro",
   "make": "KingSmith",
   "model": "WalkingPad A1 PRO",
-  "driver": "KingSmith WalkingPad Driver",
-
+  "driver": "Kingsmith Walking Pad",
+  "weight": {
+    "maxUser": 300,
+    "unit": "lb"
+  },
   "source": {
     "name": "KingSmith Official Store",
-    "url": "https://www.kingsmith.com/products/walkingpad-a1-pro"
+    "url": "https://www.kingsmith.com/products/kingsmith-a1-pro-foldable-walking-pad"
   },
-
-  "features": {
-    "bluetooth": true,
-    "ftms": false,
-
-    "speed_read": true,
-    "speed_control": true,
-
-    "incline_read": false,
-    "incline_control": false,
-
-    "distance": true,
-    "steps": false,
-    "cadence": false,
-
-    "calories": false,
-    "heart_rate": false,
-
-    "remote_start": false
-  },
-
-  "applications": {
-    "fitosc": { "supported": false, "notes": [] },
-    "vrti": {
+  "features": [
+    "speedControl"
+  ],
+  "vendorApps": [
+    {
+      "name": "KSFit",
       "supported": true,
       "notes": []
     }
-  },
-
-  "sharedNotes": []
+  ],
+  "sharedNotes": [
+    "FootSense automatic speed control"
+  ]
 }

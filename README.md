@@ -1,9 +1,6 @@
-﻿# Treadmill Compatibility Database
+# Treadmill Compatibility Database
 
-Authoritative treadmill compatibility data for:
-
-- **FitOSC**
-- **VRTI**
+Authoritative database of Bluetooth-enabled treadmill capabilities and third-party app compatibility for FitOSC and VRTI
 
 ## Quick Start
 
@@ -29,7 +26,7 @@ data/
   treadmills.json      # Compiled dataset (auto-generated)
 schema/
   treadmill.schema.json    # Individual file schema
-  features.schema.json     # Feature flags schema
+  features.schema.json     # Features array schema
   treadmills.schema.json   # Compiled dataset schema
 scripts/
   compile.js           # Compiles individual files into dataset
@@ -39,12 +36,12 @@ scripts/
 ## Data Rules
 
 - One treadmill per JSON file in `data/treadmills/`
-- Feature flags are boolean (true/false)
-- Driver is required
-- Source must be a store or manufacturer product page
-- Optional fields (`weight`, `speedRange`) are omitted if unknown
+- Features are stored as an array of supported capability strings
+- Driver name is required
+- Source must be a valid URI to store or manufacturer product page
+- Optional field (`weight`) is omitted if unknown
 - No nulls or placeholder values
-- Compiled dataset is auto-generated (don't edit manually)
+- Compiled dataset is auto-generated (don't edit `data/treadmills.json` manually)
 
 ## Adding a New Treadmill
 
@@ -67,33 +64,40 @@ scripts/
     "name": "Official Store",
     "url": "https://example.com/product"
   },
-  "features": {
-    "bluetooth": true,
-    "ftms": false,
-    "speed_read": true,
-    "speed_control": true,
-    "incline_read": false,
-    "incline_control": false,
-    "distance": true,
-    "steps": false,
-    "cadence": false,
-    "calories": false,
-    "heart_rate": false,
-    "remote_start": false
-  },
-  "applications": {
-    "fitosc": {
-      "supported": false,
-      "notes": []
-    },
-    "vrti": {
+  "features": ["speedControl", "inclineControl"],
+  "vendorApps": [
+    {
+      "name": "Kinomap",
       "supported": true,
-      "notes": ["Works with v2.0+"]
+      "notes": []
     }
-  },
+  ],
   "sharedNotes": []
 }
 ```
+
+### Valid Feature Values
+
+Only include features that the treadmill supports. Omit unsupported features from the array.
+
+- `speedControl` - Remote speed control capability
+- `inclineControl` - Remote incline control capability
+- `cadence` - Cadence measurement (steps per minute)
+- `calories` - Calorie expenditure tracking
+- `heartRate` - Heart rate monitoring
+- `steps` - Step count tracking
+
+### Valid Driver Names
+
+- `Kingsmith Walking Pad` - Kingsmith proprietary Bluetooth driver
+- `Generic` - Generic Bluetooth FTMS driver
+
+### Valid Vendor App Names
+
+- `URevo` - URevo fitness app
+- `Kinomap` - Kinomap training app
+- `Zwift` - Zwift virtual training platform
+- `KSFit` - Kingsmith fitness app
 
 ## Git Hooks
 
@@ -119,6 +123,7 @@ All data is validated using JSON Schema (Draft 7) with AJV:
 - URI format validation for source URLs
 - Required fields enforcement
 - Type checking for all properties
+- Enum validation for features and vendor app names
 - Additional properties blocked (strict mode)
 
 ## Contributing

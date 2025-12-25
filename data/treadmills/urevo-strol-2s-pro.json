@@ -1,0 +1,37 @@
+{
+  "id": "urevo-strol-2s-pro",
+  "make": "UREVO",
+  "model": "Strol 2S Pro",
+  "driver": "Generic",
+  "weight": {
+    "maxUser": 265,
+    "unit": "lb"
+  },
+  "source": {
+    "name": "UREVO Official Store",
+    "url": "https://www.urevo.com/products/urevo-strol-2s-pro-treadmill"
+  },
+  "features": [
+    "speedControl",
+    "inclineControl"
+  ],
+  "vendorApps": [
+    {
+      "name": "URevo",
+      "supported": true,
+      "notes": []
+    },
+    {
+      "name": "Zwift",
+      "supported": true,
+      "notes": []
+    },
+    {
+      "name": "Kinomap",
+      "supported": true,
+      "notes": []
+    }
+  ],
+  "sharedNotes": [
+  ]
+}

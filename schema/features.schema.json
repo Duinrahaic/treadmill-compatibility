@@ -1,45 +1,18 @@
-﻿{
+{
   "$schema": "http://json-schema.org/draft-07/schema#",
   "$id": "features.schema.json",
-  "type": "object",
-  "description": "Bluetooth FTMS treadmill feature flags",
-  "additionalProperties": false,
-  "required": [
-    "bluetooth",
-    "ftms",
-
-    "speed_read",
-    "speed_control",
-
-    "incline_read",
-    "incline_control",
-
-    "distance",
-    "steps",
-    "cadence",
-
-    "calories",
-    "heart_rate",
-
-    "remote_start"
-  ],
-  "properties": {
-    "bluetooth": { "type": "boolean" },
-    "ftms": { "type": "boolean" },
-
-    "speed_read": { "type": "boolean" },
-    "speed_control": { "type": "boolean" },
-
-    "incline_read": { "type": "boolean" },
-    "incline_control": { "type": "boolean" },
-
-    "distance": { "type": "boolean" },
-    "steps": { "type": "boolean" },
-    "cadence": { "type": "boolean" },
-
-    "calories": { "type": "boolean" },
-    "heart_rate": { "type": "boolean" },
-
-    "remote_start": { "type": "boolean" }
+  "type": "array",
+  "description": "List of supported treadmill features",
+  "uniqueItems": true,
+  "items": {
+    "type": "string",
+    "enum": [
+      "speedControl",
+      "inclineControl",
+      "cadence",
+      "calories",
+      "heartRate",
+      "steps"
+    ]
   }
 }

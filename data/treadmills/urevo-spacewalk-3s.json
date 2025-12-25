@@ -1,7 +1,7 @@
 {
-  "id": "urevo-strol-2e",
+  "id": "urevo-spacewalk-3s",
   "make": "UREVO",
-  "model": "Strol 2E (URTM030)",
+  "model": "SpaceWalk 3S",
   "driver": "Generic",
   "weight": {
     "maxUser": 265,
@@ -9,10 +9,11 @@
   },
   "source": {
     "name": "UREVO Official Store",
-    "url": "https://www.urevo.com/products/strol-2e-treadmill"
+    "url": "https://www.urevo.com/products/spacewalk-3s-treadmill"
   },
   "features": [
-    "speedControl"
+    "speedControl",
+    "inclineControl"
   ],
   "vendorApps": [
     {
@@ -22,6 +23,5 @@
     }
   ],
   "sharedNotes": [
-
   ]
 }

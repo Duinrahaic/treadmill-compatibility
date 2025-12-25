@@ -1,41 +1,22 @@
-﻿{
+{
   "id": "kingsmith-walkingpad-p1",
   "make": "KingSmith",
   "model": "WalkingPad P1",
-  "driver": "KingSmith WalkingPad Driver",
-
+  "driver": "Kingsmith Walking Pad",
   "source": {
     "name": "KingSmith Official Store",
-    "url": "https://www.kingsmith.com/products/walkingpad-p1"
+    "url": "https://www.kingsmith.com/products/king-smith-p1-foldable-walking-pad"
   },
-
-  "features": {
-    "bluetooth": true,
-    "ftms": false,
-
-    "speed_read": true,
-    "speed_control": true,
-
-    "incline_read": false,
-    "incline_control": false,
-
-    "distance": true,
-    "steps": false,
-    "cadence": false,
-
-    "calories": false,
-    "heart_rate": false,
-
-    "remote_start": false
-  },
-
-  "applications": {
-    "fitosc": { "supported": false, "notes": [] },
-    "vrti": {
+  "features": [
+    "speedControl"
+  ],
+  "vendorApps": [
+    {
+      "name": "KSFit",
       "supported": true,
       "notes": []
     }
-  },
-
-  "sharedNotes": []
+  ],
+  "sharedNotes": [
+  ]
 }

@@ -1,41 +1,33 @@
-﻿{
+{
   "id": "xterra-trx4500",
   "make": "XTERRA",
   "model": "TRX4500",
-  "driver": "Generic Bluetooth (FTMS)",
-
+  "driver": "Generic",
+  "weight": {
+    "maxUser": 350,
+    "unit": "lb"
+  },
   "source": {
     "name": "XTERRA Fitness Official Store",
-    "url": "https://www.xterrafitness.com/trx4500-treadmill"
+    "url": "https://www.xterrafitness.com/xterra-treadmill-trx4500"
   },
-
-  "features": {
-    "bluetooth": true,
-    "ftms": true,
-
-    "speed_read": true,
-    "speed_control": true,
-
-    "incline_read": false,
-    "incline_control": false,
-
-    "distance": true,
-    "steps": false,
-    "cadence": false,
-
-    "calories": false,
-    "heart_rate": false,
-
-    "remote_start": false
-  },
-
-  "applications": {
-    "fitosc": { "supported": false, "notes": [] },
-    "vrti": {
+  "features": [
+    "speedControl",
+    "inclineControl",
+    "heartRate"
+  ],
+  "vendorApps": [
+    {
+      "name": "Kinomap",
+      "supported": true,
+      "notes": []
+    },
+    {
+      "name": "Zwift",
       "supported": true,
       "notes": []
     }
-  },
-
-  "sharedNotes": []
+  ],
+  "sharedNotes": [
+  ]
 }

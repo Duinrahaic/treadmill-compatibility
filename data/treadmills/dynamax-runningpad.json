@@ -1,38 +1,23 @@
-﻿{
+{
   "id": "dynamax-runningpad",
   "make": "Dynamax",
   "model": "RunningPad (DYCV-10221)",
-  "driver": "KingSmith WalkingPad Driver",
+  "driver": "Kingsmith Walking Pad",
   "source": {
     "name": "Dynamax Official Store",
     "url": "https://dynamax.com/products/runningpad"
   },
-  "features": {
-    "bluetooth": true,
-    "ftms": false,
-
-    "speed_read": true,
-    "speed_control": true,
-
-    "incline_read": false,
-    "incline_control": false,
-
-    "distance": true,
-    "steps": false,
-    "cadence": false,
-
-    "calories": false,
-    "heart_rate": false,
-
-    "remote_start": false
-  },
-  "applications": {
-    "fitosc": { "supported": false, "notes": [] },
-    "vrti": {
+  "features": [
+    "speedControl"
+  ],
+  "vendorApps": [
+    {
+      "name": "KSFit",
       "supported": true,
-      "notes": [
-      ]
+      "notes": []
     }
-  },
-  "sharedNotes": []
+  ],
+  "sharedNotes": [
+
+  ]
 }

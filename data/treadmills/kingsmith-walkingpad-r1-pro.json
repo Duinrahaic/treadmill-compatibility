@@ -1,49 +1,22 @@
-﻿{
+{
   "id": "kingsmith-walkingpad-r1-pro",
   "make": "KingSmith",
   "model": "WalkingPad R1 PRO",
-  "driver": "KingSmith WalkingPad Driver",
-
-  "speedRange": {
-    "min": 0.5,
-    "max": 10,
-    "unit": "kmh"
-  },
-
+  "driver": "Kingsmith Walking Pad",
   "source": {
     "name": "KingSmith Official Store",
-    "url": "https://www.kingsmith.com/products/walkingpad-r1-pro"
+    "url": "https://www.kingsmith.com/products/king-smith-r1-pro-2in1-foldable-treadmill"
   },
-
-  "features": {
-    "bluetooth": true,
-    "ftms": false,
-
-    "speed_read": true,
-    "speed_control": true,
-
-    "incline_read": false,
-    "incline_control": false,
-
-    "distance": true,
-    "steps": false,
-    "cadence": false,
-
-    "calories": false,
-    "heart_rate": false,
-
-    "remote_start": false
-  },
-
-  "applications": {
-    "fitosc": { "supported": false, "notes": [] },
-    "vrti": {
+  "features": [
+    "speedControl"
+  ],
+  "vendorApps": [
+    {
+      "name": "KSFit",
       "supported": true,
-      "notes": [
-        "Limited to ~6 km/h unless the bar is extended"
-      ]
+      "notes": []
     }
-  },
-
-  "sharedNotes": []
+  ],
+  "sharedNotes": [
+  ]
 }
