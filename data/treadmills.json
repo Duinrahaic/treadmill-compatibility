@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2025-12-25T19:45:47.855Z",
+    "generatedAt": "2025-12-29T20:57:33.417Z",
     "schemaVersion": "1.0.0"
   },
   "treadmills": [
@@ -92,7 +92,9 @@
           "notes": []
         }
       ],
-      "sharedNotes": []
+      "sharedNotes": [
+        "When the bar is not extended, the R1 Pro limits its speed to 6km/h."
+      ]
     },
     {
       "id": "kingsmith-walkingpad-z1",
