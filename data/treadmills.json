@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2025-12-29T20:57:33.417Z",
+    "generatedAt": "2025-12-29T21:14:40.871Z",
     "schemaVersion": "1.0.0"
   },
   "treadmills": [
@@ -39,7 +39,8 @@
         "url": "https://www.kingsmith.com/products/kingsmith-a1-pro-foldable-walking-pad"
       },
       "features": [
-        "speedControl"
+        "speedControl",
+        "steps"
       ],
       "vendorApps": [
         {
@@ -62,7 +63,8 @@
         "url": "https://www.kingsmith.com/products/king-smith-p1-foldable-walking-pad"
       },
       "features": [
-        "speedControl"
+        "speedControl",
+        "steps"
       ],
       "vendorApps": [
         {
@@ -83,7 +85,8 @@
         "url": "https://www.kingsmith.com/products/king-smith-r1-pro-2in1-foldable-treadmill"
       },
       "features": [
-        "speedControl"
+        "speedControl",
+        "steps"
       ],
       "vendorApps": [
         {

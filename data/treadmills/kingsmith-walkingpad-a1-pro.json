@@ -12,7 +12,8 @@
     "url": "https://www.kingsmith.com/products/kingsmith-a1-pro-foldable-walking-pad"
   },
   "features": [
-    "speedControl"
+    "speedControl",
+    "steps"
   ],
   "vendorApps": [
     {

@@ -8,7 +8,8 @@
     "url": "https://www.kingsmith.com/products/king-smith-p1-foldable-walking-pad"
   },
   "features": [
-    "speedControl"
+    "speedControl",
+    "steps"
   ],
   "vendorApps": [
     {
