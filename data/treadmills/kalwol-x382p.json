@@ -1,0 +1,35 @@
+{
+  "id": "kalwol-x382p",
+  "make": "KALWOL",
+  "model": "X382P",
+  "driver": "Generic",
+  "weight": {
+    "maxUser": 350,
+    "unit": "lb"
+  },
+  "source": {
+    "name": "Amazon.ca",
+    "url": "https://www.amazon.ca/dp/B0FX9X68TJ"
+  },
+  "features": [
+    "speedControl",
+    "steps"
+  ],
+  "vendorApps": [
+    {
+      "name": "FitShow",
+      "supported": true
+    },
+    {
+      "name": "Kinomap",
+      "supported": true
+    },
+    {
+      "name": "Zwift",
+      "supported": true
+    }
+  ],
+  "sharedNotes": [
+    "Treadmill incorrectly implements FTMS protocol by using MPH units in parts of its implementation. Compatibility fix available in VRTI."
+  ]
+}

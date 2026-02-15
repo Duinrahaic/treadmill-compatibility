@@ -55,7 +55,7 @@
         "properties": {
           "name": {
             "type": "string",
-            "enum": ["URevo", "Kinomap", "Zwift", "KSFit"],
+            "enum": ["URevo", "Kinomap", "Zwift", "KSFit", "FitShow"],
             "description": "Vendor app name"
           },
           "supported": {
