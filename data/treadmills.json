@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-02-15T14:44:39.041Z",
+    "generatedAt": "2026-02-17T10:48:49.235Z",
     "schemaVersion": "1.0.0"
   },
   "treadmills": [
@@ -303,7 +303,7 @@
       },
       "source": {
         "name": "XTERRA Fitness Official Store",
-        "url": "https://www.xterrafitness.com/xterra-treadmill-trx4500"
+        "url": "https://global.xterrafitness.com/product-page/trx4500"
       },
       "features": [
         "speedControl",
