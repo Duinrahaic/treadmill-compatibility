@@ -7,10 +7,7 @@
     "name": "KingSmith Official Store",
     "url": "https://www.kingsmith.com/products/king-smith-p1-foldable-walking-pad"
   },
-  "features": [
-    "speedControl",
-    "steps"
-  ],
+  "features": ["speedControl", "steps"],
   "vendorApps": [
     {
       "name": "KSFit",
@@ -18,6 +15,15 @@
       "notes": []
     }
   ],
-  "sharedNotes": [
-  ]
+  "supportedBy": [
+    {
+      "name": "FitOSC",
+      "supported": true
+    },
+    {
+      "name": "VRTI",
+      "supported": true
+    }
+  ],
+  "sharedNotes": []
 }

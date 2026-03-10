@@ -11,9 +11,7 @@
     "name": "UREVO Official Store",
     "url": "https://www.urevo.com/products/urevo-spacewalk-e4w-treadmill"
   },
-  "features": [
-    "speedControl"
-  ],
+  "features": ["speedControl"],
   "vendorApps": [
     {
       "name": "URevo",
@@ -21,7 +19,15 @@
       "notes": []
     }
   ],
-  "sharedNotes": [
-
-  ]
+  "supportedBy": [
+    {
+      "name": "FitOSC",
+      "supported": true
+    },
+    {
+      "name": "VRTI",
+      "supported": true
+    }
+  ],
+  "sharedNotes": []
 }

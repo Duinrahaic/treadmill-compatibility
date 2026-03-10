@@ -7,15 +7,22 @@
     "name": "KingSmith Official Store",
     "url": "https://www.kingsmith.com/products/king-smith-r1-pro-2in1-foldable-treadmill"
   },
-  "features": [
-    "speedControl",
-    "steps"
-  ],
+  "features": ["speedControl", "steps"],
   "vendorApps": [
     {
       "name": "KSFit",
       "supported": true,
       "notes": []
+    }
+  ],
+  "supportedBy": [
+    {
+      "name": "FitOSC",
+      "supported": true
+    },
+    {
+      "name": "VRTI",
+      "supported": true
     }
   ],
   "sharedNotes": [

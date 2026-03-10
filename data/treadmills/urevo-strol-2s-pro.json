@@ -11,10 +11,7 @@
     "name": "UREVO Official Store",
     "url": "https://www.urevo.com/products/urevo-strol-2s-pro-treadmill"
   },
-  "features": [
-    "speedControl",
-    "inclineControl"
-  ],
+  "features": ["speedControl", "inclineControl"],
   "vendorApps": [
     {
       "name": "URevo",
@@ -32,6 +29,15 @@
       "notes": []
     }
   ],
-  "sharedNotes": [
-  ]
+  "supportedBy": [
+    {
+      "name": "FitOSC",
+      "supported": true
+    },
+    {
+      "name": "VRTI",
+      "supported": true
+    }
+  ],
+  "sharedNotes": []
 }

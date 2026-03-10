@@ -11,11 +11,7 @@
     "name": "XTERRA Fitness Official Store",
     "url": "https://global.xterrafitness.com/product-page/trx4500"
   },
-  "features": [
-    "speedControl",
-    "inclineControl",
-    "heartRate"
-  ],
+  "features": ["speedControl", "inclineControl", "heartRate"],
   "vendorApps": [
     {
       "name": "Kinomap",
@@ -28,6 +24,15 @@
       "notes": []
     }
   ],
-  "sharedNotes": [
-  ]
+  "supportedBy": [
+    {
+      "name": "FitOSC",
+      "supported": true
+    },
+    {
+      "name": "VRTI",
+      "supported": true
+    }
+  ],
+  "sharedNotes": []
 }

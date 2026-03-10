@@ -8,6 +8,7 @@
     "make",
     "model",
     "driver",
+    "supportedBy",
     "source",
     "features",
     "sharedNotes"
@@ -18,7 +19,29 @@
     "model": { "type": "string" },
     "driver": {
       "type": "string",
-      "enum": ["Kingsmith Walking Pad", "Generic"]
+      "enum": ["Kingsmith Walking Pad", "Generic", "PitPat"]
+    },
+
+    "supportedBy": {
+      "type": "array",
+      "description": "Software applications that support this treadmill",
+      "items": {
+        "type": "object",
+        "required": ["name", "supported"],
+        "additionalProperties": false,
+        "properties": {
+          "name": {
+            "type": "string",
+            "enum": ["FitOSC", "VRTI"],
+            "description": "Software application name"
+          },
+          "supported": {
+            "type": "boolean",
+            "description": "Whether this treadmill is compatible with this software"
+          }
+        }
+      },
+      "minItems": 1
     },
 
     "weight": {
@@ -55,7 +78,7 @@
         "properties": {
           "name": {
             "type": "string",
-            "enum": ["URevo", "Kinomap", "Zwift", "KSFit", "FitShow"],
+            "enum": ["URevo", "Kinomap", "Zwift", "KSFit", "FitShow", "PitPat"],
             "description": "Vendor app name"
           },
           "supported": {

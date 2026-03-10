@@ -11,10 +11,7 @@
     "name": "KingSmith Official Store",
     "url": "https://www.kingsmith.com/products/kingsmith-a1-pro-foldable-walking-pad"
   },
-  "features": [
-    "speedControl",
-    "steps"
-  ],
+  "features": ["speedControl", "steps"],
   "vendorApps": [
     {
       "name": "KSFit",
@@ -22,7 +19,15 @@
       "notes": []
     }
   ],
-  "sharedNotes": [
-    "FootSense automatic speed control"
-  ]
+  "supportedBy": [
+    {
+      "name": "FitOSC",
+      "supported": true
+    },
+    {
+      "name": "VRTI",
+      "supported": true
+    }
+  ],
+  "sharedNotes": ["FootSense automatic speed control"]
 }

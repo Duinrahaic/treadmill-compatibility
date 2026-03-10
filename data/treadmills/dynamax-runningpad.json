@@ -7,9 +7,7 @@
     "name": "Dynamax Official Store",
     "url": "https://www.dynamax-fitness.com/runningpad"
   },
-  "features": [
-    "speedControl"
-  ],
+  "features": ["speedControl"],
   "vendorApps": [
     {
       "name": "KSFit",
@@ -17,7 +15,15 @@
       "notes": []
     }
   ],
-  "sharedNotes": [
-
-  ]
+  "supportedBy": [
+    {
+      "name": "FitOSC",
+      "supported": true
+    },
+    {
+      "name": "VRTI",
+      "supported": true
+    }
+  ],
+  "sharedNotes": []
 }

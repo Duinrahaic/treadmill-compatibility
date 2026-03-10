@@ -1,9 +1,26 @@
 {
   "meta": {
-    "generatedAt": "2026-02-17T10:48:49.235Z",
+    "generatedAt": "2026-03-10T21:01:42.169Z",
     "schemaVersion": "1.0.0"
   },
   "treadmills": [
+    {
+      "id": "deerrun-q2-urban",
+      "make": "DeerRun",
+      "model": "Q2 Urban",
+      "driver": "PitPat",
+      "source": {
+        "name": "DeerRun Official Store",
+        "url": "https://deerruntreadmill.com/products/deerrun-q2-urban-7-incline-smart-walking-pad-treadmill-with-remote-control"
+      },
+      "features": ["speedControl"],
+      "vendorApps": [{ "name": "PitPat", "supported": true, "notes": [] }],
+      "supportedBy": [
+        { "name": "FitOSC", "supported": false },
+        { "name": "VRTI", "supported": true }
+      ],
+      "sharedNotes": []
+    },
     {
       "id": "dynamax-runningpad",
       "make": "Dynamax",
@@ -13,15 +30,11 @@
         "name": "Dynamax Official Store",
         "url": "https://www.dynamax-fitness.com/runningpad"
       },
-      "features": [
-        "speedControl"
-      ],
-      "vendorApps": [
-        {
-          "name": "KSFit",
-          "supported": true,
-          "notes": []
-        }
+      "features": ["speedControl"],
+      "vendorApps": [{ "name": "KSFit", "supported": true, "notes": [] }],
+      "supportedBy": [
+        { "name": "FitOSC", "supported": true },
+        { "name": "VRTI", "supported": true }
       ],
       "sharedNotes": []
     },
@@ -30,63 +43,40 @@
       "make": "KALWOL",
       "model": "X382P",
       "driver": "Generic",
-      "weight": {
-        "maxUser": 350,
-        "unit": "lb"
-      },
+      "weight": { "maxUser": 350, "unit": "lb" },
       "source": {
         "name": "Amazon.ca",
         "url": "https://www.amazon.ca/dp/B0FX9X68TJ"
       },
-      "features": [
-        "speedControl",
-        "steps"
-      ],
+      "features": ["speedControl", "steps"],
       "vendorApps": [
-        {
-          "name": "FitShow",
-          "supported": true
-        },
-        {
-          "name": "Kinomap",
-          "supported": true
-        },
-        {
-          "name": "Zwift",
-          "supported": true
-        }
+        { "name": "FitShow", "supported": true },
+        { "name": "Kinomap", "supported": true },
+        { "name": "Zwift", "supported": true }
       ],
-      "sharedNotes": [
-        "Treadmill incorrectly implements FTMS protocol by using MPH units in parts of its implementation. Compatibility fix available in VRTI."
-      ]
+      "supportedBy": [
+        { "name": "VRTI", "supported": true },
+        { "name": "FitOSC", "supported": false }
+      ],
+      "sharedNotes": []
     },
     {
       "id": "kingsmith-walkingpad-a1-pro",
       "make": "KingSmith",
       "model": "WalkingPad A1 PRO",
       "driver": "Kingsmith Walking Pad",
-      "weight": {
-        "maxUser": 300,
-        "unit": "lb"
-      },
+      "weight": { "maxUser": 300, "unit": "lb" },
       "source": {
         "name": "KingSmith Official Store",
         "url": "https://www.kingsmith.com/products/kingsmith-a1-pro-foldable-walking-pad"
       },
-      "features": [
-        "speedControl",
-        "steps"
+      "features": ["speedControl", "steps"],
+      "vendorApps": [{ "name": "KSFit", "supported": true, "notes": [] }],
+      "supportedBy": [
+        { "name": "FitOSC", "supported": true },
+        { "name": "VRTI", "supported": true }
       ],
-      "vendorApps": [
-        {
-          "name": "KSFit",
-          "supported": true,
-          "notes": []
-        }
-      ],
-      "sharedNotes": [
-        "FootSense automatic speed control"
-      ]
+      "sharedNotes": ["FootSense automatic speed control"]
     },
     {
       "id": "kingsmith-walkingpad-p1",
@@ -97,16 +87,11 @@
         "name": "KingSmith Official Store",
         "url": "https://www.kingsmith.com/products/king-smith-p1-foldable-walking-pad"
       },
-      "features": [
-        "speedControl",
-        "steps"
-      ],
-      "vendorApps": [
-        {
-          "name": "KSFit",
-          "supported": true,
-          "notes": []
-        }
+      "features": ["speedControl", "steps"],
+      "vendorApps": [{ "name": "KSFit", "supported": true, "notes": [] }],
+      "supportedBy": [
+        { "name": "FitOSC", "supported": true },
+        { "name": "VRTI", "supported": true }
       ],
       "sharedNotes": []
     },
@@ -119,16 +104,11 @@
         "name": "KingSmith Official Store",
         "url": "https://www.kingsmith.com/products/king-smith-r1-pro-2in1-foldable-treadmill"
       },
-      "features": [
-        "speedControl",
-        "steps"
-      ],
-      "vendorApps": [
-        {
-          "name": "KSFit",
-          "supported": true,
-          "notes": []
-        }
+      "features": ["speedControl", "steps"],
+      "vendorApps": [{ "name": "KSFit", "supported": true, "notes": [] }],
+      "supportedBy": [
+        { "name": "FitOSC", "supported": true },
+        { "name": "VRTI", "supported": true }
       ],
       "sharedNotes": [
         "When the bar is not extended, the R1 Pro limits its speed to 6km/h."
@@ -143,15 +123,11 @@
         "name": "KingSmith Official Store",
         "url": "https://www.kingsmith.com/products/walkingpad-z1-foldable-walking-pad"
       },
-      "features": [
-        "speedControl"
-      ],
-      "vendorApps": [
-        {
-          "name": "KSFit",
-          "supported": true,
-          "notes": []
-        }
+      "features": ["speedControl"],
+      "vendorApps": [{ "name": "KSFit", "supported": true, "notes": [] }],
+      "supportedBy": [
+        { "name": "FitOSC", "supported": true },
+        { "name": "VRTI", "supported": true }
       ],
       "sharedNotes": []
     },
@@ -160,24 +136,16 @@
       "make": "UREVO",
       "model": "SpaceWalk 3S",
       "driver": "Generic",
-      "weight": {
-        "maxUser": 265,
-        "unit": "lb"
-      },
+      "weight": { "maxUser": 265, "unit": "lb" },
       "source": {
         "name": "UREVO Official Store",
         "url": "https://www.urevo.com/products/spacewalk-3s-treadmill"
       },
-      "features": [
-        "speedControl",
-        "inclineControl"
-      ],
-      "vendorApps": [
-        {
-          "name": "URevo",
-          "supported": true,
-          "notes": []
-        }
+      "features": ["speedControl", "inclineControl"],
+      "vendorApps": [{ "name": "URevo", "supported": true, "notes": [] }],
+      "supportedBy": [
+        { "name": "FitOSC", "supported": true },
+        { "name": "VRTI", "supported": true }
       ],
       "sharedNotes": []
     },
@@ -186,23 +154,16 @@
       "make": "UREVO",
       "model": "SpaceWalk E1L",
       "driver": "Generic",
-      "weight": {
-        "maxUser": 242,
-        "unit": "lb"
-      },
+      "weight": { "maxUser": 242, "unit": "lb" },
       "source": {
         "name": "UREVO Official Store",
         "url": "https://www.urevo.com/products/urevo-spacewalk-e1l-treadmill"
       },
-      "features": [
-        "speedControl"
-      ],
-      "vendorApps": [
-        {
-          "name": "URevo",
-          "supported": true,
-          "notes": []
-        }
+      "features": ["speedControl"],
+      "vendorApps": [{ "name": "URevo", "supported": true, "notes": [] }],
+      "supportedBy": [
+        { "name": "FitOSC", "supported": true },
+        { "name": "VRTI", "supported": true }
       ],
       "sharedNotes": []
     },
@@ -211,23 +172,16 @@
       "make": "UREVO",
       "model": "SpaceWalk E4W",
       "driver": "Generic",
-      "weight": {
-        "maxUser": 265,
-        "unit": "lb"
-      },
+      "weight": { "maxUser": 265, "unit": "lb" },
       "source": {
         "name": "UREVO Official Store",
         "url": "https://www.urevo.com/products/urevo-spacewalk-e4w-treadmill"
       },
-      "features": [
-        "speedControl"
-      ],
-      "vendorApps": [
-        {
-          "name": "URevo",
-          "supported": true,
-          "notes": []
-        }
+      "features": ["speedControl"],
+      "vendorApps": [{ "name": "URevo", "supported": true, "notes": [] }],
+      "supportedBy": [
+        { "name": "FitOSC", "supported": true },
+        { "name": "VRTI", "supported": true }
       ],
       "sharedNotes": []
     },
@@ -236,23 +190,16 @@
       "make": "UREVO",
       "model": "Strol 2E (URTM030)",
       "driver": "Generic",
-      "weight": {
-        "maxUser": 265,
-        "unit": "lb"
-      },
+      "weight": { "maxUser": 265, "unit": "lb" },
       "source": {
         "name": "UREVO Official Store",
         "url": "https://www.urevo.com/products/strol-2e-treadmill"
       },
-      "features": [
-        "speedControl"
-      ],
-      "vendorApps": [
-        {
-          "name": "URevo",
-          "supported": true,
-          "notes": []
-        }
+      "features": ["speedControl"],
+      "vendorApps": [{ "name": "URevo", "supported": true, "notes": [] }],
+      "supportedBy": [
+        { "name": "FitOSC", "supported": true },
+        { "name": "VRTI", "supported": true }
       ],
       "sharedNotes": []
     },
@@ -261,34 +208,20 @@
       "make": "UREVO",
       "model": "Strol 2S Pro",
       "driver": "Generic",
-      "weight": {
-        "maxUser": 265,
-        "unit": "lb"
-      },
+      "weight": { "maxUser": 265, "unit": "lb" },
       "source": {
         "name": "UREVO Official Store",
         "url": "https://www.urevo.com/products/urevo-strol-2s-pro-treadmill"
       },
-      "features": [
-        "speedControl",
-        "inclineControl"
-      ],
+      "features": ["speedControl", "inclineControl"],
       "vendorApps": [
-        {
-          "name": "URevo",
-          "supported": true,
-          "notes": []
-        },
-        {
-          "name": "Zwift",
-          "supported": true,
-          "notes": []
-        },
-        {
-          "name": "Kinomap",
-          "supported": true,
-          "notes": []
-        }
+        { "name": "URevo", "supported": true, "notes": [] },
+        { "name": "Zwift", "supported": true, "notes": [] },
+        { "name": "Kinomap", "supported": true, "notes": [] }
+      ],
+      "supportedBy": [
+        { "name": "FitOSC", "supported": true },
+        { "name": "VRTI", "supported": true }
       ],
       "sharedNotes": []
     },
@@ -297,30 +230,19 @@
       "make": "XTERRA",
       "model": "TRX4500",
       "driver": "Generic",
-      "weight": {
-        "maxUser": 350,
-        "unit": "lb"
-      },
+      "weight": { "maxUser": 350, "unit": "lb" },
       "source": {
         "name": "XTERRA Fitness Official Store",
         "url": "https://global.xterrafitness.com/product-page/trx4500"
       },
-      "features": [
-        "speedControl",
-        "inclineControl",
-        "heartRate"
-      ],
+      "features": ["speedControl", "inclineControl", "heartRate"],
       "vendorApps": [
-        {
-          "name": "Kinomap",
-          "supported": true,
-          "notes": []
-        },
-        {
-          "name": "Zwift",
-          "supported": true,
-          "notes": []
-        }
+        { "name": "Kinomap", "supported": true, "notes": [] },
+        { "name": "Zwift", "supported": true, "notes": [] }
+      ],
+      "supportedBy": [
+        { "name": "FitOSC", "supported": true },
+        { "name": "VRTI", "supported": true }
       ],
       "sharedNotes": []
     }

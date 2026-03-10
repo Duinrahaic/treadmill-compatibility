@@ -7,9 +7,7 @@
     "name": "KingSmith Official Store",
     "url": "https://www.kingsmith.com/products/walkingpad-z1-foldable-walking-pad"
   },
-  "features": [
-    "speedControl"
-  ],
+  "features": ["speedControl"],
   "vendorApps": [
     {
       "name": "KSFit",
@@ -17,7 +15,15 @@
       "notes": []
     }
   ],
-  "sharedNotes": [
-
-  ]
+  "supportedBy": [
+    {
+      "name": "FitOSC",
+      "supported": true
+    },
+    {
+      "name": "VRTI",
+      "supported": true
+    }
+  ],
+  "sharedNotes": []
 }
