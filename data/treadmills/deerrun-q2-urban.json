@@ -1,0 +1,29 @@
+{
+  "id": "deerrun-q2-urban",
+  "make": "DeerRun",
+  "model": "Q2 Urban",
+  "driver": "PitPat",
+  "source": {
+    "name": "DeerRun Official Store",
+    "url": "https://deerruntreadmill.com/products/deerrun-q2-urban-7-incline-smart-walking-pad-treadmill-with-remote-control"
+  },
+  "features": ["speedControl"],
+  "vendorApps": [
+    {
+      "name": "PitPat",
+      "supported": true,
+      "notes": []
+    }
+  ],
+  "supportedBy": [
+    {
+      "name": "FitOSC",
+      "supported": false
+    },
+    {
+      "name": "VRTI",
+      "supported": true
+    }
+  ],
+  "sharedNotes": []
+}
