@@ -5,6 +5,8 @@
   "description": "Treadmill compatibility database",
   "scripts": {
     "compile": "node scripts/compile.js",
+    "format": "prettier --write \"package*.json\" \"data/**/*.json\" \"schema/**/*.json\" \"scripts/**/*.{js,sh}\"",
+    "format:check": "prettier --check \"package*.json\" \"data/**/*.json\" \"schema/**/*.json\" \"scripts/**/*.{js,sh}\"",
     "validate": "ajv validate -s schema/treadmill.schema.json -r schema/features.schema.json -d \"data/treadmills/*.json\" --spec=draft7 -c ajv-formats",
     "validate:compiled": "ajv validate -s schema/treadmills.schema.json -r schema/treadmill.schema.json -r schema/features.schema.json -d data/treadmills.json --spec=draft7 -c ajv-formats",
     "prepare": "bash scripts/install-hooks.sh"
@@ -12,6 +14,8 @@
   "devDependencies": {
     "ajv": "^8.12.0",
     "ajv-cli": "^5.0.0",
-    "ajv-formats": "^3.0.1"
+    "ajv-formats": "^3.0.1",
+    "prettier": "^3.6.0",
+    "prettier-plugin-sh": "^0.18.0"
   }
 }
