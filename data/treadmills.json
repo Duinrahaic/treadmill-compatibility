@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-03-10T21:01:59.189Z",
+    "generatedAt": "2026-03-24T22:26:57.240Z",
     "schemaVersion": "1.0.0"
   },
   "treadmills": [
@@ -57,6 +57,23 @@
       "supportedBy": [
         { "name": "VRTI", "supported": true },
         { "name": "FitOSC", "supported": false }
+      ],
+      "sharedNotes": []
+    },
+    {
+      "id": "kingsmith-g15",
+      "make": "KingSmith",
+      "model": "G15",
+      "driver": "Kingsmith G15",
+      "source": {
+        "name": "Amazon UAE",
+        "url": "https://www.amazon.ae/KINGSMITH-Electric-Treadmill-Real-Time-Tracking/dp/B0FH6CRWKZ"
+      },
+      "features": ["speedControl"],
+      "vendorApps": [{ "name": "KSFit", "supported": true, "notes": [] }],
+      "supportedBy": [
+        { "name": "FitOSC", "supported": false },
+        { "name": "VRTI", "supported": true }
       ],
       "sharedNotes": []
     },

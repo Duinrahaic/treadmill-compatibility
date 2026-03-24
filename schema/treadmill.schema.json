@@ -19,7 +19,7 @@
     "model": { "type": "string" },
     "driver": {
       "type": "string",
-      "enum": ["Kingsmith Walking Pad", "Generic", "PitPat"]
+      "enum": ["Kingsmith Walking Pad", "Generic", "PitPat", "Kingsmith G15"]
     },
 
     "supportedBy": {
