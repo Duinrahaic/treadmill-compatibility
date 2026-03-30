@@ -9,6 +9,10 @@
     "experimental": true,
     "driver": ["FTMS_KINGSMITH_G15"]
   },
+  "weight": {
+    "maxUser": 136,
+    "unit": "kg"
+  },
   "source": {
     "name": "Amazon UAE",
     "url": "https://www.amazon.ae/KINGSMITH-Electric-Treadmill-Real-Time-Tracking/dp/B0FH6CRWKZ"

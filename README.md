@@ -64,7 +64,8 @@ scripts/
   },
   "vrtiData": {
     "experimental": false,
-    "driver": ["FTMS"]
+    "driver": ["FTMS"],
+    "notes": []
   },
   "source": {
     "name": "Official Store",

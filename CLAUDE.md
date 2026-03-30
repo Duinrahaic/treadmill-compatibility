@@ -49,7 +49,7 @@ All schemas use `additionalProperties: false` for strict validation. All devices
 
 Each treadmill stores app-specific compatibility in `fitOscData` and `vrtiData`.
 
-`vrtiData` also includes an `experimental` flag.
+`vrtiData` also includes an `experimental` flag and optional `notes` array for VRTI-specific behaviour notes.
 
 `fitOscData` supports these driver values:
 

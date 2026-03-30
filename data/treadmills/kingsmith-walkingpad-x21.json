@@ -9,6 +9,10 @@
     "experimental": false,
     "driver": ["KINGSMITH_1234"]
   },
+  "weight": {
+    "maxUser": 243,
+    "unit": "lb"
+  },
   "source": {
     "name": "KingSmith Official Store",
     "url": "https://www.walkingpad.com/products/walkingpad-x21-foldable-treadmill"

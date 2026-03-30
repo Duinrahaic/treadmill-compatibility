@@ -60,6 +60,11 @@
           "minItems": 0,
           "uniqueItems": true,
           "description": "VRTI driver options for this treadmill. Use an empty array when unsupported."
+        },
+        "notes": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "VRTI-specific notes that should not be shared across apps"
         }
       }
     },

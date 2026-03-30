@@ -9,6 +9,10 @@
     "experimental": false,
     "driver": ["KINGSMITH_FE00"]
   },
+  "weight": {
+    "maxUser": 220,
+    "unit": "lb"
+  },
   "source": {
     "name": "KingSmith Official Store",
     "url": "https://www.kingsmith.com/products/king-smith-p1-foldable-walking-pad"

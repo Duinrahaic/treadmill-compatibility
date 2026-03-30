@@ -9,6 +9,10 @@
     "experimental": false,
     "driver": ["KINGSMITH_FE00"]
   },
+  "weight": {
+    "maxUser": 110,
+    "unit": "kg"
+  },
   "source": {
     "name": "Dynamax Official Store",
     "url": "https://www.dynamax-fitness.com/runningpad"

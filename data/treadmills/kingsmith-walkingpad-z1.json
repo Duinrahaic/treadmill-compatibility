@@ -9,6 +9,10 @@
     "experimental": false,
     "driver": ["FTMS"]
   },
+  "weight": {
+    "maxUser": 243,
+    "unit": "lb"
+  },
   "source": {
     "name": "KingSmith Official Store",
     "url": "https://www.kingsmith.com/products/walkingpad-z1-foldable-walking-pad"

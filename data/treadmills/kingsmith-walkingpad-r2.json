@@ -7,7 +7,14 @@
   },
   "vrtiData": {
     "experimental": false,
-    "driver": ["KINGSMITH_FE00", "KINGSMITH_1234"]
+    "driver": ["KINGSMITH_FE00", "KINGSMITH_1234"],
+    "notes": [
+      "Various models of the R2 are sold under the same name. Which driver you need depends on the model you receive."
+    ]
+  },
+  "weight": {
+    "maxUser": 243,
+    "unit": "lb"
   },
   "source": {
     "name": "KingSmith Official Store",
@@ -21,7 +28,5 @@
       "notes": []
     }
   ],
-  "sharedNotes": [
-    "Various models of the R2 are sold under the same name. Which driver you need depends on the model you receive."
-  ]
+  "sharedNotes": []
 }

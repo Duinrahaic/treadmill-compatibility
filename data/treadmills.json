@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-03-30T15:46:42.598Z",
+    "generatedAt": "2026-03-30T16:46:30.409Z",
     "schemaVersion": "2.0.0"
   },
   "treadmills": [
@@ -10,6 +10,7 @@
       "model": "Q2 Urban",
       "fitOscData": { "driver": [] },
       "vrtiData": { "experimental": true, "driver": ["PITPAT_FBA0"] },
+      "weight": { "maxUser": 300, "unit": "lb" },
       "source": {
         "name": "DeerRun Official Store",
         "url": "https://deerruntreadmill.com/products/deerrun-q2-urban-7-incline-smart-walking-pad-treadmill-with-remote-control"
@@ -24,6 +25,7 @@
       "model": "RunningPad (DYCV-10221)",
       "fitOscData": { "driver": ["WALKINGPAD"] },
       "vrtiData": { "experimental": false, "driver": ["KINGSMITH_FE00"] },
+      "weight": { "maxUser": 110, "unit": "kg" },
       "source": {
         "name": "Dynamax Official Store",
         "url": "https://www.dynamax-fitness.com/runningpad"
@@ -57,6 +59,7 @@
       "model": "G15",
       "fitOscData": { "driver": [] },
       "vrtiData": { "experimental": true, "driver": ["FTMS_KINGSMITH_G15"] },
+      "weight": { "maxUser": 136, "unit": "kg" },
       "source": {
         "name": "Amazon UAE",
         "url": "https://www.amazon.ae/KINGSMITH-Electric-Treadmill-Real-Time-Tracking/dp/B0FH6CRWKZ"
@@ -86,6 +89,7 @@
       "model": "WalkingPad P1",
       "fitOscData": { "driver": ["WALKINGPAD"] },
       "vrtiData": { "experimental": false, "driver": ["KINGSMITH_FE00"] },
+      "weight": { "maxUser": 220, "unit": "lb" },
       "source": {
         "name": "KingSmith Official Store",
         "url": "https://www.kingsmith.com/products/king-smith-p1-foldable-walking-pad"
@@ -100,6 +104,7 @@
       "model": "WalkingPad R1 PRO",
       "fitOscData": { "driver": ["WALKINGPAD"] },
       "vrtiData": { "experimental": false, "driver": ["KINGSMITH_FE00"] },
+      "weight": { "maxUser": 243, "unit": "lb" },
       "source": {
         "name": "KingSmith Official Store",
         "url": "https://www.kingsmith.com/products/king-smith-r1-pro-2in1-foldable-treadmill"
@@ -117,17 +122,19 @@
       "fitOscData": { "driver": [] },
       "vrtiData": {
         "experimental": false,
-        "driver": ["KINGSMITH_FE00", "KINGSMITH_1234"]
+        "driver": ["KINGSMITH_FE00", "KINGSMITH_1234"],
+        "notes": [
+          "Various models of the R2 are sold under the same name. Which driver you need depends on the model you receive."
+        ]
       },
+      "weight": { "maxUser": 243, "unit": "lb" },
       "source": {
         "name": "KingSmith Official Store",
         "url": "https://www.walkingpad.com/products/walkingpad-r2-foldable-treadmill"
       },
       "features": ["speedControl", "steps"],
       "vendorApps": [{ "name": "KSFit", "supported": true, "notes": [] }],
-      "sharedNotes": [
-        "Various models of the R2 are sold under the same name. Which driver you need depends on the model you receive."
-      ]
+      "sharedNotes": []
     },
     {
       "id": "kingsmith-walkingpad-x21",
@@ -135,6 +142,7 @@
       "model": "WalkingPad X21",
       "fitOscData": { "driver": [] },
       "vrtiData": { "experimental": false, "driver": ["KINGSMITH_1234"] },
+      "weight": { "maxUser": 243, "unit": "lb" },
       "source": {
         "name": "KingSmith Official Store",
         "url": "https://www.walkingpad.com/products/walkingpad-x21-foldable-treadmill"
@@ -149,6 +157,7 @@
       "model": "WalkingPad Z1",
       "fitOscData": { "driver": ["GENERIC"] },
       "vrtiData": { "experimental": false, "driver": ["FTMS"] },
+      "weight": { "maxUser": 243, "unit": "lb" },
       "source": {
         "name": "KingSmith Official Store",
         "url": "https://www.kingsmith.com/products/walkingpad-z1-foldable-walking-pad"

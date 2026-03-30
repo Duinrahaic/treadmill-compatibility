@@ -9,6 +9,10 @@
     "experimental": true,
     "driver": ["PITPAT_FBA0"]
   },
+  "weight": {
+    "maxUser": 300,
+    "unit": "lb"
+  },
   "source": {
     "name": "DeerRun Official Store",
     "url": "https://deerruntreadmill.com/products/deerrun-q2-urban-7-incline-smart-walking-pad-treadmill-with-remote-control"
