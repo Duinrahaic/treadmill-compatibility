@@ -2,7 +2,13 @@
   "id": "kingsmith-walkingpad-a1-pro",
   "make": "KingSmith",
   "model": "WalkingPad A1 PRO",
-  "driver": "Kingsmith Walking Pad",
+  "fitOscData": {
+    "driver": ["WALKINGPAD"]
+  },
+  "vrtiData": {
+    "experimental": false,
+    "driver": ["KINGSMITH_FE00"]
+  },
   "weight": {
     "maxUser": 300,
     "unit": "lb"
@@ -17,16 +23,6 @@
       "name": "KSFit",
       "supported": true,
       "notes": []
-    }
-  ],
-  "supportedBy": [
-    {
-      "name": "FitOSC",
-      "supported": true
-    },
-    {
-      "name": "VRTI",
-      "supported": true
     }
   ],
   "sharedNotes": ["FootSense automatic speed control"]

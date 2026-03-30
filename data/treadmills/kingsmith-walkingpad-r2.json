@@ -1,0 +1,27 @@
+{
+  "id": "kingsmith-walkingpad-r2",
+  "make": "KingSmith",
+  "model": "WalkingPad R2",
+  "fitOscData": {
+    "driver": []
+  },
+  "vrtiData": {
+    "experimental": false,
+    "driver": ["KINGSMITH_FE00", "KINGSMITH_1234"]
+  },
+  "source": {
+    "name": "KingSmith Official Store",
+    "url": "https://www.walkingpad.com/products/walkingpad-r2-foldable-treadmill"
+  },
+  "features": ["speedControl", "steps"],
+  "vendorApps": [
+    {
+      "name": "KSFit",
+      "supported": true,
+      "notes": []
+    }
+  ],
+  "sharedNotes": [
+    "Various models of the R2 are sold under the same name. Which driver you need depends on the model you receive."
+  ]
+}

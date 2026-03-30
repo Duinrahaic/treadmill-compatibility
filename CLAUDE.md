@@ -25,10 +25,13 @@ npm run validate:compiled
 ## Architecture
 
 ### Data Flow
+
 Individual treadmill JSON files (`data/treadmills/*.json`) are the source of truth. The compilation script (`scripts/compile.js`) aggregates them into a single `data/treadmills.json` file with metadata (generatedAt, schemaVersion).
 
 ### Schema Validation
+
 Three-tier schema structure using JSON Schema Draft 7:
+
 - `schema/features.schema.json`: Array of supported feature strings. Valid values:
   - `speedControl`: Remote speed control capability
   - `inclineControl`: Remote incline control capability
@@ -37,18 +40,37 @@ Three-tier schema structure using JSON Schema Draft 7:
   - `heartRate`: Heart rate monitoring
   - `steps`: Step count tracking
   - Only include features that are supported; omit unsupported features from the array
-- `schema/treadmill.schema.json`: Defines individual treadmill structure. References features.schema.json. Includes required fields (id, make, model, driver, source, features, sharedNotes) and optional fields (weight, vendorApps)
+- `schema/treadmill.schema.json`: Defines individual treadmill structure. References features.schema.json. Includes required fields (id, make, model, fitOscData, vrtiData, source, features, sharedNotes) and optional fields (weight, vendorApps)
 - `schema/treadmills.schema.json`: Defines compiled dataset structure with meta object and array of treadmills
 
 All schemas use `additionalProperties: false` for strict validation. All devices have Bluetooth connectivity.
 
-### Driver Names
-Restricted to specific values (can be expanded as needed):
-- `Kingsmith Walking Pad`: Kingsmith proprietary Bluetooth driver
-- `Generic`: Generic Bluetooth FTMS driver
+### App Compatibility Data
+
+Each treadmill stores app-specific compatibility in `fitOscData` and `vrtiData`.
+
+`vrtiData` also includes an `experimental` flag.
+
+`fitOscData` supports these driver values:
+
+- `GENERIC`: FitOSC generic treadmill driver
+- `WALKINGPAD`: FitOSC WalkingPad driver
+
+`vrtiData` supports these driver values:
+
+- `FTMS`: Generic FTMS driver
+- `KINGSMITH_FE00`: KingSmith Type A driver
+- `KINGSMITH_1234`: KingSmith Type B driver
+- `PITPAT_FBA0`: PitPat driver
+- `FTMS_UREVO_HYBRID`: UREVO hybrid FTMS driver
+- `FTMS_KINGSMITH_G15`: KingSmith G15 driver
+
+Use an empty driver array when an app is unsupported. Set `vrtiData.experimental` to `true` only for experimental VRTI drivers.
 
 ### Git Pre-Commit Hook
+
 Installed automatically via `npm install` (package.json `prepare` script runs `scripts/install-hooks.sh`). When committing changes to `data/treadmills/*.json`, the hook:
+
 1. Runs `node scripts/compile.js`
 2. Auto-stages `data/treadmills.json` if changed
 3. Includes it in the commit
@@ -56,7 +78,9 @@ Installed automatically via `npm install` (package.json `prepare` script runs `s
 This ensures the compiled dataset is always in sync with individual files.
 
 ### Vendor Apps
+
 Optional field for third-party fitness apps:
+
 - `vendorApps`: array of objects with `name`, `supported`, and optional `notes`
 - Valid app names (enum): `URevo`, `Kinomap`, `Zwift`, `KSFit`
 - Kingsmith models support KSFit app; UREVO models support URevo app
@@ -82,6 +106,7 @@ Optional field for third-party fitness apps:
 ## CI/CD
 
 GitHub Actions workflow (`.github/workflows/build.yml`) runs on pushes to data/schema/scripts:
+
 1. Validates individual treadmill files
 2. Compiles dataset
 3. Validates compiled dataset

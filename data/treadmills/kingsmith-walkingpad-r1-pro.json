@@ -2,7 +2,13 @@
   "id": "kingsmith-walkingpad-r1-pro",
   "make": "KingSmith",
   "model": "WalkingPad R1 PRO",
-  "driver": "Kingsmith Walking Pad",
+  "fitOscData": {
+    "driver": ["WALKINGPAD"]
+  },
+  "vrtiData": {
+    "experimental": false,
+    "driver": ["KINGSMITH_FE00"]
+  },
   "source": {
     "name": "KingSmith Official Store",
     "url": "https://www.kingsmith.com/products/king-smith-r1-pro-2in1-foldable-treadmill"
@@ -13,16 +19,6 @@
       "name": "KSFit",
       "supported": true,
       "notes": []
-    }
-  ],
-  "supportedBy": [
-    {
-      "name": "FitOSC",
-      "supported": true
-    },
-    {
-      "name": "VRTI",
-      "supported": true
     }
   ],
   "sharedNotes": [

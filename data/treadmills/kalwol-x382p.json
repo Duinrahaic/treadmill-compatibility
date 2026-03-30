@@ -2,7 +2,13 @@
   "id": "kalwol-x382p",
   "make": "KALWOL",
   "model": "X382P",
-  "driver": "Generic",
+  "fitOscData": {
+    "driver": []
+  },
+  "vrtiData": {
+    "experimental": false,
+    "driver": ["FTMS"]
+  },
   "weight": {
     "maxUser": 350,
     "unit": "lb"
@@ -24,16 +30,6 @@
     {
       "name": "Zwift",
       "supported": true
-    }
-  ],
-  "supportedBy": [
-    {
-      "name": "VRTI",
-      "supported": true
-    },
-    {
-      "name": "FitOSC",
-      "supported": false
     }
   ],
   "sharedNotes": []

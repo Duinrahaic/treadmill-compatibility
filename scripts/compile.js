@@ -21,7 +21,7 @@ const treadmills = files.map((file) => {
 const output = {
   meta: {
     generatedAt: new Date().toISOString(),
-    schemaVersion: "1.0.0",
+    schemaVersion: "2.0.0",
   },
   treadmills,
 };

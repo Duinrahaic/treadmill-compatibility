@@ -7,8 +7,8 @@
     "id",
     "make",
     "model",
-    "driver",
-    "supportedBy",
+    "fitOscData",
+    "vrtiData",
     "source",
     "features",
     "sharedNotes"
@@ -17,31 +17,51 @@
     "id": { "type": "string" },
     "make": { "type": "string" },
     "model": { "type": "string" },
-    "driver": {
-      "type": "string",
-      "enum": ["Kingsmith Walking Pad", "Generic", "PitPat", "Kingsmith G15"]
+    "fitOscData": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["driver"],
+      "properties": {
+        "driver": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": ["GENERIC", "WALKINGPAD"]
+          },
+          "minItems": 0,
+          "uniqueItems": true,
+          "description": "FitOSC driver options for this treadmill. Use an empty array when unsupported."
+        }
+      }
     },
 
-    "supportedBy": {
-      "type": "array",
-      "description": "Software applications that support this treadmill",
-      "items": {
-        "type": "object",
-        "required": ["name", "supported"],
-        "additionalProperties": false,
-        "properties": {
-          "name": {
+    "vrtiData": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["experimental", "driver"],
+      "properties": {
+        "experimental": {
+          "type": "boolean",
+          "description": "Whether VRTI support relies on an experimental driver"
+        },
+        "driver": {
+          "type": "array",
+          "items": {
             "type": "string",
-            "enum": ["FitOSC", "VRTI"],
-            "description": "Software application name"
+            "enum": [
+              "FTMS",
+              "KINGSMITH_FE00",
+              "KINGSMITH_1234",
+              "PITPAT_FBA0",
+              "FTMS_UREVO_HYBRID",
+              "FTMS_KINGSMITH_G15"
+            ]
           },
-          "supported": {
-            "type": "boolean",
-            "description": "Whether this treadmill is compatible with this software"
-          }
+          "minItems": 0,
+          "uniqueItems": true,
+          "description": "VRTI driver options for this treadmill. Use an empty array when unsupported."
         }
-      },
-      "minItems": 1
+      }
     },
 
     "weight": {

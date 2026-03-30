@@ -2,7 +2,13 @@
   "id": "kingsmith-walkingpad-p1",
   "make": "KingSmith",
   "model": "WalkingPad P1",
-  "driver": "Kingsmith Walking Pad",
+  "fitOscData": {
+    "driver": ["WALKINGPAD"]
+  },
+  "vrtiData": {
+    "experimental": false,
+    "driver": ["KINGSMITH_FE00"]
+  },
   "source": {
     "name": "KingSmith Official Store",
     "url": "https://www.kingsmith.com/products/king-smith-p1-foldable-walking-pad"
@@ -13,16 +19,6 @@
       "name": "KSFit",
       "supported": true,
       "notes": []
-    }
-  ],
-  "supportedBy": [
-    {
-      "name": "FitOSC",
-      "supported": true
-    },
-    {
-      "name": "VRTI",
-      "supported": true
     }
   ],
   "sharedNotes": []

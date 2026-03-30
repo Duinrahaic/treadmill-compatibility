@@ -37,7 +37,7 @@ scripts/
 
 - One treadmill per JSON file in `data/treadmills/`
 - Features are stored as an array of supported capability strings
-- Driver name is required
+- `fitOscData` and `vrtiData` are required
 - Source must be a valid URI to store or manufacturer product page
 - Optional field (`weight`) is omitted if unknown
 - No nulls or placeholder values
@@ -59,7 +59,13 @@ scripts/
   "id": "brand-model",
   "make": "Brand",
   "model": "Model Name",
-  "driver": "Driver Name",
+  "fitOscData": {
+    "driver": ["GENERIC"]
+  },
+  "vrtiData": {
+    "experimental": false,
+    "driver": ["FTMS"]
+  },
   "source": {
     "name": "Official Store",
     "url": "https://example.com/product"
@@ -89,8 +95,19 @@ Only include features that the treadmill supports. Omit unsupported features fro
 
 ### Valid Driver Names
 
-- `Kingsmith Walking Pad` - Kingsmith proprietary Bluetooth driver
-- `Generic` - Generic Bluetooth FTMS driver
+FitOSC drivers:
+
+- `GENERIC` - FitOSC generic treadmill driver
+- `WALKINGPAD` - FitOSC WalkingPad driver
+
+VRTI drivers:
+
+- `FTMS` - Generic FTMS driver
+- `KINGSMITH_FE00` - KingSmith Type A driver
+- `KINGSMITH_1234` - KingSmith Type B driver
+- `PITPAT_FBA0` - PitPat driver
+- `FTMS_UREVO_HYBRID` - UREVO hybrid FTMS driver
+- `FTMS_KINGSMITH_G15` - KingSmith G15 driver
 
 ### Valid Vendor App Names
 

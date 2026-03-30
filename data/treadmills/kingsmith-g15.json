@@ -2,7 +2,13 @@
   "id": "kingsmith-g15",
   "make": "KingSmith",
   "model": "G15",
-  "driver": "Kingsmith G15",
+  "fitOscData": {
+    "driver": []
+  },
+  "vrtiData": {
+    "experimental": true,
+    "driver": ["FTMS_KINGSMITH_G15"]
+  },
   "source": {
     "name": "Amazon UAE",
     "url": "https://www.amazon.ae/KINGSMITH-Electric-Treadmill-Real-Time-Tracking/dp/B0FH6CRWKZ"
@@ -13,16 +19,6 @@
       "name": "KSFit",
       "supported": true,
       "notes": []
-    }
-  ],
-  "supportedBy": [
-    {
-      "name": "FitOSC",
-      "supported": false
-    },
-    {
-      "name": "VRTI",
-      "supported": true
     }
   ],
   "sharedNotes": []

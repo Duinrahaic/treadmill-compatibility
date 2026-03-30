@@ -1,19 +1,19 @@
 {
-  "id": "kingsmith-walkingpad-z1",
+  "id": "kingsmith-walkingpad-x21",
   "make": "KingSmith",
-  "model": "WalkingPad Z1",
+  "model": "WalkingPad X21",
   "fitOscData": {
-    "driver": ["GENERIC"]
+    "driver": []
   },
   "vrtiData": {
     "experimental": false,
-    "driver": ["FTMS"]
+    "driver": ["KINGSMITH_1234"]
   },
   "source": {
     "name": "KingSmith Official Store",
-    "url": "https://www.kingsmith.com/products/walkingpad-z1-foldable-walking-pad"
+    "url": "https://www.walkingpad.com/products/walkingpad-x21-foldable-treadmill"
   },
-  "features": ["speedControl"],
+  "features": ["speedControl", "steps"],
   "vendorApps": [
     {
       "name": "KSFit",

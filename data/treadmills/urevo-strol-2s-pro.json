@@ -2,7 +2,13 @@
   "id": "urevo-strol-2s-pro",
   "make": "UREVO",
   "model": "Strol 2S Pro",
-  "driver": "Generic",
+  "fitOscData": {
+    "driver": ["GENERIC"]
+  },
+  "vrtiData": {
+    "experimental": false,
+    "driver": ["FTMS"]
+  },
   "weight": {
     "maxUser": 265,
     "unit": "lb"
@@ -27,16 +33,6 @@
       "name": "Kinomap",
       "supported": true,
       "notes": []
-    }
-  ],
-  "supportedBy": [
-    {
-      "name": "FitOSC",
-      "supported": true
-    },
-    {
-      "name": "VRTI",
-      "supported": true
     }
   ],
   "sharedNotes": []

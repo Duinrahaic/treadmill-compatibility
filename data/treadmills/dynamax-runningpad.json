@@ -2,7 +2,13 @@
   "id": "dynamax-runningpad",
   "make": "Dynamax",
   "model": "RunningPad (DYCV-10221)",
-  "driver": "Kingsmith Walking Pad",
+  "fitOscData": {
+    "driver": ["WALKINGPAD"]
+  },
+  "vrtiData": {
+    "experimental": false,
+    "driver": ["KINGSMITH_FE00"]
+  },
   "source": {
     "name": "Dynamax Official Store",
     "url": "https://www.dynamax-fitness.com/runningpad"
@@ -13,16 +19,6 @@
       "name": "KSFit",
       "supported": true,
       "notes": []
-    }
-  ],
-  "supportedBy": [
-    {
-      "name": "FitOSC",
-      "supported": true
-    },
-    {
-      "name": "VRTI",
-      "supported": true
     }
   ],
   "sharedNotes": []

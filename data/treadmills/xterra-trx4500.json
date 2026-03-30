@@ -2,7 +2,13 @@
   "id": "xterra-trx4500",
   "make": "XTERRA",
   "model": "TRX4500",
-  "driver": "Generic",
+  "fitOscData": {
+    "driver": ["GENERIC"]
+  },
+  "vrtiData": {
+    "experimental": false,
+    "driver": ["FTMS"]
+  },
   "weight": {
     "maxUser": 350,
     "unit": "lb"
@@ -22,16 +28,6 @@
       "name": "Zwift",
       "supported": true,
       "notes": []
-    }
-  ],
-  "supportedBy": [
-    {
-      "name": "FitOSC",
-      "supported": true
-    },
-    {
-      "name": "VRTI",
-      "supported": true
     }
   ],
   "sharedNotes": []
