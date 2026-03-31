@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-03-30T16:46:30.409Z",
+    "generatedAt": "2026-03-31T08:23:46.829Z",
     "schemaVersion": "2.0.0"
   },
   "treadmills": [
@@ -201,7 +201,7 @@
       "make": "UREVO",
       "model": "SpaceWalk E4W",
       "fitOscData": { "driver": ["GENERIC"] },
-      "vrtiData": { "experimental": true, "driver": ["FTMS_UREVO_HYBRID"] },
+      "vrtiData": { "experimental": true, "driver": [] },
       "weight": { "maxUser": 265, "unit": "lb" },
       "source": {
         "name": "UREVO Official Store",

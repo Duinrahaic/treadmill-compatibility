@@ -7,7 +7,7 @@
   },
   "vrtiData": {
     "experimental": true,
-    "driver": ["FTMS_UREVO_HYBRID"]
+    "driver": []
   },
   "weight": {
     "maxUser": 265,
