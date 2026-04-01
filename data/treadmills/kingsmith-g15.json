@@ -6,7 +6,7 @@
     "driver": []
   },
   "vrtiData": {
-    "experimental": true,
+    "experimental": false,
     "driver": ["FTMS_KINGSMITH_G15"]
   },
   "weight": {

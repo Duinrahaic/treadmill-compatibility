@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-03-31T08:23:46.829Z",
+    "generatedAt": "2026-04-01T18:27:23.392Z",
     "schemaVersion": "2.0.0"
   },
   "treadmills": [
@@ -58,7 +58,7 @@
       "make": "KingSmith",
       "model": "G15",
       "fitOscData": { "driver": [] },
-      "vrtiData": { "experimental": true, "driver": ["FTMS_KINGSMITH_G15"] },
+      "vrtiData": { "experimental": false, "driver": ["FTMS_KINGSMITH_G15"] },
       "weight": { "maxUser": 136, "unit": "kg" },
       "source": {
         "name": "Amazon UAE",
