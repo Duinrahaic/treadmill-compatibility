@@ -108,7 +108,8 @@ VRTI drivers:
 - `KINGSMITH_1234` - KingSmith Type B driver
 - `PITPAT_FBA0` - PitPat driver
 - `FTMS_UREVO_HYBRID` - UREVO hybrid FTMS driver
-- `FTMS_KINGSMITH_G15` - KingSmith G15 driver
+- `FTMS_KINGSMITH_24E2` - KingSmith Type C driver
+- `ESLINKER_YPOO` - Eslinker driver
 
 ### Valid Vendor App Names
 
@@ -116,6 +117,7 @@ VRTI drivers:
 - `Kinomap` - Kinomap training app
 - `Zwift` - Zwift virtual training platform
 - `KSFit` - Kingsmith fitness app
+- `Gymax` - Costway/Goplus/Superfit fitness app
 
 ## Git Hooks
 

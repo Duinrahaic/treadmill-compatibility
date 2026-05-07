@@ -1,0 +1,29 @@
+{
+  "id": "costway-superfit-76841235",
+  "make": "Costway",
+  "model": "SuperFit 76841235",
+  "fitOscData": {
+    "driver": []
+  },
+  "vrtiData": {
+    "experimental": false,
+    "driver": ["ESLINKER_YPOO"]
+  },
+  "weight": {
+    "maxUser": 265,
+    "unit": "lb"
+  },
+  "source": {
+    "name": "Costway",
+    "url": "https://www.costway.com/2-25-hp-2-in-1-folding-treadmill-with-remote-control-and-led-display.html"
+  },
+  "features": ["speedControl"],
+  "vendorApps": [
+    {
+      "name": "Gymax",
+      "supported": true,
+      "notes": []
+    }
+  ],
+  "sharedNotes": []
+}

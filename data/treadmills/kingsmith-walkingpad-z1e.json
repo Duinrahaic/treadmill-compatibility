@@ -1,13 +1,13 @@
 {
-  "id": "kingsmith-walkingpad-z1",
+  "id": "kingsmith-walkingpad-z1e",
   "make": "KingSmith",
-  "model": "WalkingPad Z1",
+  "model": "WalkingPad Z1E",
   "fitOscData": {
-    "driver": ["GENERIC"]
+    "driver": []
   },
   "vrtiData": {
     "experimental": false,
-    "driver": ["FTMS"]
+    "driver": ["FTMS_KINGSMITH_24E2"]
   },
   "weight": {
     "maxUser": 243,

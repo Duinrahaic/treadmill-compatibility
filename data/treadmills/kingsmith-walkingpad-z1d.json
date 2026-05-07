@@ -1,21 +1,21 @@
 {
-  "id": "kingsmith-g15",
+  "id": "kingsmith-walkingpad-z1d",
   "make": "KingSmith",
-  "model": "G15",
+  "model": "WalkingPad Z1D",
   "fitOscData": {
-    "driver": []
+    "driver": ["GENERIC"]
   },
   "vrtiData": {
     "experimental": false,
-    "driver": ["FTMS_KINGSMITH_24E2"]
+    "driver": ["FTMS"]
   },
   "weight": {
-    "maxUser": 136,
-    "unit": "kg"
+    "maxUser": 243,
+    "unit": "lb"
   },
   "source": {
-    "name": "Amazon UAE",
-    "url": "https://www.amazon.ae/KINGSMITH-Electric-Treadmill-Real-Time-Tracking/dp/B0FH6CRWKZ"
+    "name": "KingSmith Official Store",
+    "url": "https://www.kingsmith.com/products/walkingpad-z1-foldable-walking-pad"
   },
   "features": ["speedControl"],
   "vendorApps": [

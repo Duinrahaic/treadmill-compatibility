@@ -63,7 +63,8 @@ Each treadmill stores app-specific compatibility in `fitOscData` and `vrtiData`.
 - `KINGSMITH_1234`: KingSmith Type B driver
 - `PITPAT_FBA0`: PitPat driver
 - `FTMS_UREVO_HYBRID`: UREVO hybrid FTMS driver
-- `FTMS_KINGSMITH_G15`: KingSmith G15 driver
+- `FTMS_KINGSMITH_24E2`: KingSmith Type C driver
+- `ESLINKER_YPOO`: Eslinker driver
 
 Use an empty driver array when an app is unsupported. Set `vrtiData.experimental` to `true` only for experimental VRTI drivers.
 
@@ -82,7 +83,7 @@ This ensures the compiled dataset is always in sync with individual files.
 Optional field for third-party fitness apps:
 
 - `vendorApps`: array of objects with `name`, `supported`, and optional `notes`
-- Valid app names (enum): `URevo`, `Kinomap`, `Zwift`, `KSFit`
+- Valid app names (enum): `URevo`, `Kinomap`, `Zwift`, `KSFit`, `FitShow`, `PitPat`, `Gymax`
 - Kingsmith models support KSFit app; UREVO models support URevo app
 
 ## Data Rules

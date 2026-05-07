@@ -54,7 +54,8 @@
               "KINGSMITH_1234",
               "PITPAT_FBA0",
               "FTMS_UREVO_HYBRID",
-              "FTMS_KINGSMITH_G15"
+              "FTMS_KINGSMITH_24E2",
+              "ESLINKER_YPOO"
             ]
           },
           "minItems": 0,
@@ -103,7 +104,15 @@
         "properties": {
           "name": {
             "type": "string",
-            "enum": ["URevo", "Kinomap", "Zwift", "KSFit", "FitShow", "PitPat"],
+            "enum": [
+              "URevo",
+              "Kinomap",
+              "Zwift",
+              "KSFit",
+              "FitShow",
+              "PitPat",
+              "Gymax"
+            ],
             "description": "Vendor app name"
           },
           "supported": {
