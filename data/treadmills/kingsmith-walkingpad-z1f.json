@@ -1,0 +1,31 @@
+{
+  "id": "kingsmith-walkingpad-z1f",
+  "make": "KingSmith",
+  "model": "WalkingPad Z1F",
+  "fitOscData": {
+    "driver": ["GENERIC"]
+  },
+  "vrtiData": {
+    "experimental": false,
+    "driver": ["FTMS"]
+  },
+  "weight": {
+    "maxUser": 243,
+    "unit": "lb"
+  },
+  "source": {
+    "name": "KingSmith Official Store",
+    "url": "https://www.kingsmith.com/products/walkingpad-z1-foldable-walking-pad"
+  },
+  "features": ["speedControl"],
+  "vendorApps": [
+    {
+      "name": "KSFit",
+      "supported": true,
+      "notes": []
+    }
+  ],
+  "sharedNotes": [
+    "Reported to advertise over Bluetooth as KS-HD-Z1D, matching WalkingPad Z1D compatibility."
+  ]
+}

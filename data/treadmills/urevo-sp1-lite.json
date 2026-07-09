@@ -1,0 +1,30 @@
+{
+  "id": "urevo-sp1-lite",
+  "make": "UREVO",
+  "model": "SP1 Lite Walking Treadmill (URTM022)",
+  "fitOscData": {
+    "driver": ["GENERIC"]
+  },
+  "vrtiData": {
+    "experimental": false,
+    "driver": ["FTMS"],
+    "notes": ["FTMS support reported, but step count data is not available."]
+  },
+  "weight": {
+    "maxUser": 265,
+    "unit": "lb"
+  },
+  "source": {
+    "name": "UREVO User Manual",
+    "url": "https://cdn.shopify.com/s/files/1/0787/2784/0028/files/Urevo_URTM022_SP1_Lite_Under_Desk_Foldable_Treadmill_instruction_manual_V3.0_20230519.pdf?v=1691568073"
+  },
+  "features": ["speedControl"],
+  "vendorApps": [
+    {
+      "name": "URevo",
+      "supported": true,
+      "notes": []
+    }
+  ],
+  "sharedNotes": []
+}
