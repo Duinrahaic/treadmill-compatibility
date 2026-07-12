@@ -1,0 +1,30 @@
+{
+  "id": "lifesmart-h1-hybrid",
+  "make": "LifeSmart",
+  "model": "H1 Hybrid",
+  "fitOscData": {
+    "driver": []
+  },
+  "vrtiData": {
+    "experimental": false,
+    "driver": ["FTMS"]
+  },
+  "weight": {
+    "maxUser": 243,
+    "unit": "lb"
+  },
+  "source": {
+    "name": "Big 5 Sporting Goods",
+    "url": "https://www.big5sportinggoods.com/store/details/lifesmart-h1-hybrid-2-in-1-foldable-treadmill/2315156430004"
+  },
+  "features": ["speedControl", "calories", "steps"],
+  "vendorApps": [
+    {
+      "name": "Kinomap",
+      "supported": true
+    }
+  ],
+  "sharedNotes": [
+    "Also sold as the WalkingPad H1 2-in-1 Under-Desk Treadmill and HitGo H1."
+  ]
+}
